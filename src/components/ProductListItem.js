@@ -37,7 +37,7 @@ const ProductListItem = ({ product }) => {
                         </div>
                         <div className="flex flex-col md:flex-col justify-between items-center text-gray-900">
                             <div className='font-bold'>${product.price}</div>
-                            <BtnAddToCart product={product} />
+                            <BtnAddToCart product={product} selectedColor={selectedColor} />
                         </div>
                     </div>
                 </div>

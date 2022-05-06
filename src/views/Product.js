@@ -47,7 +47,7 @@ const Product = () => {
                         </div>
                     </div>
                     <div className="flex items-center mt-6 w-40">
-                        <BtnAddToCart product={product} />
+                        <BtnAddToCart product={product} selectedColor={selectedColor} quantity={quantity} />
                     </div>
                     <div className="mt-3">
                         <label className="text-gray-700 text-sm" for="count">Description:</label>

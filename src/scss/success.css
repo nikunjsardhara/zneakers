@@ -1,0 +1,122 @@
+.head {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section {
+  height: auto;
+  padding: 20px;
+}
+
+section .header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .header h1 {
+  font-size: 30px;
+}
+
+section .header #svg {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #3dff57;
+  border-radius: 50%;
+}
+
+section .header #svg svg {
+  color: black;
+  font-size: 30px;
+}
+
+section .middle {
+  text-align: left;
+  margin-top: 30px;
+}
+
+section .middle h2 {
+  font-size: 25px;
+  color: #ff9e00;
+}
+
+section .middle p {
+  margin: 5px 0px;
+}
+
+section .middle p span {
+  background-color: #cbe1f5;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+section .middle p b svg {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+section .middle p svg {
+  display: inline-block;
+  cursor: pointer;
+}
+
+th > svg {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+td > svg {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.12s;
+  transition: all 0.12s;
+}
+
+td > svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.12s;
+  transition: all 0.12s;
+}
+
+td > span {
+  background-color: #cbe1f5;
+  padding: 3px 10px;
+  border-radius: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+/*# sourceMappingURL=success.css.map */

@@ -1,0 +1,104 @@
+@mixin FlexProps($value) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $value;
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    @include FlexProps(row);
+}
+
+section {
+    height: auto;
+    padding: 20px;
+
+    .header {
+        text-align: center;
+        @include FlexProps(column);
+
+        h1 {
+            font-size: 30px;
+        }
+
+        #svg {
+            margin-top: 10px;
+            padding: 20px;
+            background-color: rgb(61, 255, 87);
+            border-radius: 50%;
+
+            svg {
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+            }
+
+        }
+    }
+
+    .middle {
+        text-align: left;
+        margin-top: 30px;
+
+        h2 {
+            font-size: 25px;
+            color: #ff9e00;
+        }
+
+        p {
+            margin: 5px 0px;
+
+            span {
+                background-color: #cbe1f5;
+                padding: 3px 10px;
+                border-radius: 15px;
+                margin-left: 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                cursor: pointer;
+            }
+
+            b {
+                svg {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+
+            svg {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+th>svg {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+td>svg {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.12s;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.12s;
+    }
+}
+
+td>span {
+    background-color: #cbe1f5;
+    padding: 3px 10px;
+    border-radius: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
